@@ -1,27 +1,25 @@
 import * as Funcoes from "./funcoes.mjs";
 
-var opcao = 0;
-
-while(opcao === 0){
-    opcao = Funcoes.menuInicial();
-
-    if(opcao === 0){
-        alert("Opção inválida.");
-    }
-}
+var opcao = Funcoes.menuInicial();
 
 switch (opcao) {
     case 1:
         let pessoa = Funcoes.cadastroPessoa();
-        pessoa.apresentar();
+        if(pessoa){
+            pessoa.apresentar();
+        } else {
+            alert("Você optou por sair do sistema.")
+        }
         break;
     case 2:
         let cachorro = Funcoes.cadastroCachorro();
-        cachorro.apresentar();
+        if(cachorro){
+            cachorro.apresentar();
+        } else {
+            alert("Você optou por sair do sistema.")
+        }
         break;
     case 3:
         alert("Você optou por sair do sistema.")
         break;
 }
-
-
