@@ -33,7 +33,6 @@ export function cadastroPessoa() {
     if(nome){
         var pessoa = new Classes.Pessoa(nome);
     }
-    console.log(`Pessoa: ${pessoa} - tipo: ${typeof(pessoa)}`)
     return pessoa;
 }
 
