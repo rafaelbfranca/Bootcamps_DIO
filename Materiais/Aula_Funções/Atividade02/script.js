@@ -43,7 +43,13 @@ function seletor(){;
 
         if (anos == null) {
             alert(avisoCancelamento);
-            break;
+            return;
+            /*
+            Poderia utilizar o break, porém o return interrompe
+            a função toda e não apenas o loop. O uso do break é
+            interessante caso outras partes da função ainda
+            precisem ser executadas após a interrupção do loop.
+            */
         }
     }
 
@@ -56,7 +62,7 @@ function seletor(){;
             
             if (grupo == null) {
                 alert(avisoCancelamento);
-                break;
+                return;
             }
         }
 
@@ -81,7 +87,7 @@ function seletor(){;
                     pessoaEscolhida = prompt(`Escolha a pessoa:\n${listaPessoas}`);
                     if (pessoaEscolhida == null) {
                         alert(avisoCancelamento);
-                        break;
+                        return;
                     }
                 }
 
@@ -112,7 +118,7 @@ function seletor(){;
                     animalEscolhido = prompt(`Escolha o animal:\n${listaAnimais}`);
                     if (animalEscolhido == null) {
                         alert(avisoCancelamento);
-                        break;
+                        return;
                     }
                 }
 
