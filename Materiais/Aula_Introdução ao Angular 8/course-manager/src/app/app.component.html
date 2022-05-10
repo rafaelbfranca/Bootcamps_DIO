@@ -8,6 +8,11 @@
 <p><input type="text" [(ngModel)]="name2" name="name2"> Two way Data Binde - Pode exibir e atualizar o valor do atributo a partir da entrada.</p>
 -->
 
-<div class="container">
+<app-nav-bar></app-nav-bar>
+
+<div class="container mt-4">
+    <!-- A tag abaixo não é mais necessária pois o componente será chamado pelo método de rotas.
     <app-course-list></app-course-list>
+    -->
+    <router-outlet></router-outlet>
 </div>
