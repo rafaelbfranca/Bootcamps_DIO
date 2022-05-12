@@ -1,7 +1,8 @@
 <h1 class="text-success text-center">Live Angular Diretivas</h1>
 
 <!--Diretivas de Atributos-->
-<div 
+<div
+    class="col-4 mx-auto my-3"
     [ngStyle]="{background: count < 5 ? 'red' : 'green'}"
     [ngClass]="{custom: count>5}"
 >
@@ -30,13 +31,16 @@
     </li>
 </ul>
 
-<ul class="list-group mx-auto my-3 col-3">
+<ul class="list-group col-4 mx-auto my-3">
     <li *ngFor = "let pessoa of pessoas" class="list-group-item">
         O nome da pesoa é {{pessoa.nome}} {{pessoa.sobrenome}}.
     </li>
 </ul>
 
-<h3 class="text-center">{{nome}}</h3>
+<h3 class="text-center col-4 mx-auto my-3"
+appMarcaTexto corDoTexto="white" corDeFundo="blue">
+{{nome}}
+</h3>
 
 <div class="text-center">
     <button class="btn btn-success" (click)="clicou('Pedro')">Clique</button>
