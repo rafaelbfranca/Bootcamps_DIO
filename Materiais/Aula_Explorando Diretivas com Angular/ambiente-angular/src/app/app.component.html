@@ -1,1 +1,52 @@
 <h1 class="text-success text-center">Live Angular Diretivas</h1>
+
+<!--Diretivas de Atributos-->
+<div 
+    [ngStyle]="{background: count < 5 ? 'red' : 'green'}"
+    [ngClass]="{custom: count>5}"
+>
+    <h2 class="text-center">Contador: {{ count }}</h2>
+</div>
+
+<!--Diretivas Estruturais-->
+<h2 class="text-center" *ngIf = "count > 7; else menor">O contador passou de 7!</h2>
+
+<ng-template #menor>
+    <h2 class="text-center">O contador é menor que 7.</h2>
+</ng-template>
+
+<ul [ngSwitch]="count" class="list-group mx-auto col-3">
+    <li *ngSwitchCase="3" class="list-group-item">
+        É igual a 3.
+    </li>
+    <li *ngSwitchCase="5" class="list-group-item">
+        É igual a 5.
+    </li>
+    <li *ngSwitchCase="8" class="list-group-item">
+        É igual a 8.
+    </li>
+    <li *ngSwitchDefault class="list-group-item">
+        Este é o default.
+    </li>
+</ul>
+
+<ul class="list-group mx-auto my-3 col-3">
+    <li *ngFor = "let pessoa of pessoas" class="list-group-item">
+        O nome da pesoa é {{pessoa.nome}} {{pessoa.sobrenome}}.
+    </li>
+</ul>
+
+<h3 class="text-center">{{nome}}</h3>
+
+<div class="text-center">
+    <button class="btn btn-success" (click)="clicou('Pedro')">Clique</button>
+</div>
+
+<div class="col-4 mx-auto">
+    <input
+    type="text"
+    class="form-control"
+    placeholder="Digite alguma coisa"
+    [(ngModel)]="text">
+    <h4>Saída: {{text}}</h4>
+</div>
