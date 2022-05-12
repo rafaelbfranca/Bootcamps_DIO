@@ -11,7 +11,7 @@ export class CourseListComponent implements OnInit {
 
     _courses: Course[] = [];
     
-    _filterBy: string;
+    _filterBy: string = "";
 
     constructor(private courseService: CourseService) { }
 
