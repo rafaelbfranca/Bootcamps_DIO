@@ -1,4 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core'; //LOCALE_ID importado para utilizar padrões numéricos específicos de acordo com o país do dado inserido.
+import { registerLocaleData } from '@angular/common'; //Importado para o LOCALE_ID poder funcionar.
+import ptBr from '@angular/common/locales/pt'; //Importado para o LOCALE_ID reconhecer o padrão numérico brasileiro.
+registerLocaleData(ptBr); //Declarado para o LOCALE_ID aplicar o padrão numérico brasileiro.
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -51,7 +54,7 @@ import { PrintListPipe } from './print-list.pipe';
     MatButtonModule,
     MatIconModule
   ],
-  providers: [UpperCasePipe],
+  providers: [UpperCasePipe, {provide: LOCALE_ID,      useValue: 'pt-BR'    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
