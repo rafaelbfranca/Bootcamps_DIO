@@ -1,0 +1,45 @@
+{
+  "livros":
+  [  
+    {
+	  "id": "1",
+      "name": "Mais Esperto que o Diabo",
+      "price": 59.99,
+      "quantity": 1,
+      "category": "Romance",
+      "img": "image1"
+    },
+	{
+      "id": "2",
+      "name": "O Pequeno Príncipe",
+      "price": 79.99,
+      "quantity": 1,
+      "category": "Romance",
+      "img": "image2"
+    },
+	{
+      "id": "3",
+      "name": "Um Caminho para a Liberdade",
+      "price": 49.99,
+      "quantity": 1,
+      "category": "Romance",
+      "img": "image3"
+    },
+	{
+      "id": "4",
+      "name": "O Pequeno Príncipe",
+      "price": 54.99,
+      "quantity": 1,
+      "category": "Romance",
+      "img": "image2"
+    },
+	{
+      "id": "5",
+      "name": "Um Caminho para a Liberdade",
+      "price": 99.99,
+      "quantity": 1,
+      "category": "Romance",
+      "img": "image3"
+    }
+  ]
+}
