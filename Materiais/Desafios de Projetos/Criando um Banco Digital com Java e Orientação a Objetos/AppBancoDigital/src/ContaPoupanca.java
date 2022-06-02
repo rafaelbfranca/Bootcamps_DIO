@@ -2,6 +2,6 @@ public class ContaPoupanca extends Conta{
 	
 	public ContaPoupanca(Cliente cliente) {
 		super(cliente);
-		super.setTipo("Poupança");
+		super.setTipo("Poupanca");
 	}
 }

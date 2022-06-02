@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Cliente cliente = new Cliente();
-		cliente.setName("Rafael França");
+		cliente.setName("Rafael Franca");
 		
 		Conta corrente = new ContaCorrente(cliente);
 		Conta poupanca = new ContaPoupanca(cliente);
@@ -24,8 +24,8 @@ public class Main {
 					"-----------------------------------" + "\n" +
 					"Titular: " + conta.cliente.getName() + "\n" +
 					"Conta: " + conta.getTipo() + "\n" +
-					"Agência: " + conta.getAgencia() + "\n" +
-					"Número: " + conta.getNumero() + "\n" +
+					"Agencia: " + conta.getAgencia() + "\n" +
+					"Numero: " + conta.getNumero() + "\n" +
 					"Saldo: " + conta.getSaldo()
 					);
 		};
@@ -33,7 +33,7 @@ public class Main {
 		System.out.println("-----------------------------------");
 				
 		corrente.imprimirExtrato("### Extrato Conta Corrente ###");
-		poupanca.imprimirExtrato("### Extrato Conta Poupança ###");
+		poupanca.imprimirExtrato("### Extrato Conta Poupanca ###");
 	}
 
 }

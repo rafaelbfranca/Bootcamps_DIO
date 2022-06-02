@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
         "Materiais\\Desafios de Projetos\\Criando um Banco Digital com Java e Orientação a Objetos\\AppBancoDigital\\src"
-    ]
+    ],
+    "java.project.encoding": "ignore"
 }
