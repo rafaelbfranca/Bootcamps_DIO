@@ -21,6 +21,7 @@ public class Main {
         mentoria1.setTitulo("Java");
         mentoria1.setDescricao("Mentoria de Programacao Java");
         mentoria1.setData(LocalDate.now());
+        mentoria1.setCargaHoraria(2);
 
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
@@ -33,8 +34,7 @@ public class Main {
         dev1.setNome("Pedro");
         dev1.inscreverBootcamp(bootcamp);
         dev1.progredir();
-        dev1.progredir();
-        
+                
         Dev dev2 = new Dev();
         dev2.setNome("Paula");
         dev2.inscreverBootcamp(bootcamp);

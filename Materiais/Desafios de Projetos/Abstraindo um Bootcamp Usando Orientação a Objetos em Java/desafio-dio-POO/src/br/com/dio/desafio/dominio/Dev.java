@@ -1,5 +1,6 @@
 package br.com.dio.desafio.dominio;
 
+import java.time.LocalDate;
 import java.util.LinkedHashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -8,8 +9,10 @@ public class Dev {
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+    public Bootcamp bootcamp;
 
     public void inscreverBootcamp(Bootcamp bootcamp){
+        this.bootcamp = bootcamp;
         this.conteudosInscritos.addAll(bootcamp.getConteudo());
         bootcamp.getDevsInscritos().add(this);
     }
@@ -19,6 +22,10 @@ public class Dev {
         if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
+            Certificado certificado = new Certificado();
+            System.out.println((certificado.imprimirCertificado(
+                nome, conteudo.get().getTitulo(), conteudo.get().getCargaHoraria(), LocalDate.now()
+                )));
         } else{
             System.err.println("Você não está matriculado em nenhum conteúdo.");
         }

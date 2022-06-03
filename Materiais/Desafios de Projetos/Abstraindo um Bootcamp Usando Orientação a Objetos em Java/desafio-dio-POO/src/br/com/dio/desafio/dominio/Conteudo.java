@@ -5,9 +5,17 @@ public abstract class Conteudo {
     protected static final double XP_PADRAO = 10;
     private String titulo;
     private String descricao;
-
+    private int cargaHoraria;
+    
     protected abstract double calcularXp();
 
+    public int getCargaHoraria() {
+        return cargaHoraria;
+    }
+    public void setCargaHoraria(int cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
+    }
+    
     public String getTitulo() {
         return titulo;
     }
