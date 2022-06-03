@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "Materiais\\Desafios de Projetos\\Abstraindo um Bootcamp Usando Orientação a Objetos em Java\\desafio-dio-POO\\src"
+        "Materiais\\Desafios de Projetos\\Criando um Banco Digital com Java e Orientação a Objetos\\AppBancoDigital\\appbancodigital\\src\\main\\java\\com\\desafiodio"
     ],
-    "java.project.encoding": "ignore"
+    "java.project.encoding": "ignore",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
