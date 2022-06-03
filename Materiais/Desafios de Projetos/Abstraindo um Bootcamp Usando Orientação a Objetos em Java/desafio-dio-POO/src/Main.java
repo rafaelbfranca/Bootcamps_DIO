@@ -1,5 +1,4 @@
-import java.text.DateFormat;
-import java.util.Calendar;
+import java.time.LocalDate;
 
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
@@ -20,8 +19,7 @@ public class Main {
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("Java");
         mentoria1.setDescricao("Mentoria de Programacao Java");
-        DateFormat f = DateFormat.getDateInstance(DateFormat.FULL);
-        mentoria1.setData(f.format(Calendar.getInstance().getTime()));
+        mentoria1.setData(LocalDate.now());
 
         System.out.println(curso1);
         System.out.println(mentoria1);
