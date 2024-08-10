@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class TryCatch {
     public static void main(String[] args) throws Exception {
         boolean backToMain;
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         do {//Bloco do while usado para reiniciar a função main enquanto o dado informado não estiver correto.
             try {
                 backToMain = false;
-                Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
-
+                
                 System.out.println("\nDigite seu primeiro nome:");
                 String firstNome = scanner.next();
 
@@ -24,8 +24,6 @@ public class TryCatch {
                 System.out.println("\nOlá, meu nome é "+firstNome+" "+lastNome+".");
                 System.out.println("Tenho "+age+" anos.");
                 System.out.println("Minha altura é: "+hight+"m.");
-
-                scanner.close();
             } catch (Exception e) {
                 //System.out.println(e);
                 backToMain = true;
@@ -36,5 +34,6 @@ public class TryCatch {
                 }
             }
         } while (backToMain);
+        scanner.close();
     }
 }

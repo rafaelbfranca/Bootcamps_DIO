@@ -16,9 +16,8 @@ public class FormatadorCepExemplo {
                 System.out.println("\nO CEP não corresponde às regras de negócio.");
             }
         } while (runCode);
-
-        System.out.println("\nCEP formatado com sucesso.\n");
         scanner.close();
+        System.out.println("\nCEP formatado com sucesso.\n");
     }
 
     public static String formatarCep(String cep) throws CepInvalidoException{

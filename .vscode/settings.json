@@ -4,9 +4,10 @@
         "Claro_Java_Com_Spring_Boot/A5_Metodos/Sistema_Smart_Tv/src",
         "Claro_Java_Com_Spring_Boot/A1_Anatomia_das_Classes/PAC_01/src/pasta1/pasta2/pasta3",
         "Claro_Java_Com_Spring_Boot/A12_Tratamento_de_Exceções/TRYCATCH/src",
+        "Claro_Java_Com_Spring_Boot/A12_Tratamento_de_Exceções/MYEXCEPTION/src",
         "Claro_Java_Com_Spring_Boot/A11_Estruturas_Condicionais/CONTROLE-FLUXO/src",
         "Claro_Java_Com_Spring_Boot/A10_ContaBanco/src",
-        "Claro_Java_Com_Spring_Boot/A12_Tratamento_de_Exceções/MYEXCEPTION/src"
+        "Claro_Java_Com_Spring_Boot/A13_Desafio_Contador/DesafioControleFluxo/src"
     ],
     "java.project.encoding": "ignore",
     "java.configuration.updateBuildConfiguration": "interactive",
